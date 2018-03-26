@@ -10,4 +10,4 @@ legal meaning:
 - a path cannot go through the same point twice
 
 ## recursive abstraction
-When I am asked for a legal travel path that is continuous from starting location to existing treasure, the recursive abstraction can find a path with the next step in the maze leading to a solution filled.
+When I am asked for a legal travel path that is continuous from starting location to existing treasure with n choices, the recursive abstraction can find a legal travel path with one less choice.
