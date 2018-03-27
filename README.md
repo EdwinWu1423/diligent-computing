@@ -14,3 +14,12 @@ legal meaning:
 
 ## recursive abstraction
 When I am asked for a legal travel path that is continuous from starting location to existing treasure with n choices, the recursive abstraction can find a legal travel path with n-1 choices.
+
+## base case
+if the location of the explorer is at the location of the treasure, return
+
+## English or pseudocode description of algorithm
+
+## class(es), with fields and methods
+
+## version*n* wish list
