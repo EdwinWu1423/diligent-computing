@@ -19,6 +19,14 @@ When I am asked for a legal travel path that is continuous from starting locatio
 if the location of the explorer is at the location of the treasure, return
 
 ## English or pseudocode description of algorithm
+if location of explorer equals location of treasure
+	return
+else
+	for each position in maze
+		test each possible next position (up, down, left or right relative to current explorer position) to see if position is legal
+		if legal position
+			invoke recursive abstraction
+		move current position to the previous position
 
 ## class(es), with fields and methods
 
