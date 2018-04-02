@@ -17,6 +17,7 @@ When I am asked to solve a maze with n choices, the recursive abstraction can so
 
 ## base case
 if the location of the explorer is at the location of the treasure, return true
+
 if there are no legal paths, return false
 
 ## English or pseudocode description of algorithm
