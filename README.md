@@ -20,7 +20,6 @@ if the location of the explorer is at the location of the treasure, return the s
 if there are no legal paths, return
 
 ## English or pseudocode description of algorithm
-```
 if location of explorer equals location of treasure
 	return the solution
 else if no legal paths
@@ -31,7 +30,6 @@ else
 		if legal position
 			invoke recursive abstraction
 		move current position to the previous position
-```
 ## class(es), with fields and methods
 
 ## version*n* wish list
