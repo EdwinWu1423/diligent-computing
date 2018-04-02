@@ -13,11 +13,11 @@ legal meaning:
 - a path cannot go through the same point twice
 
 ## recursive abstraction
-When I am asked for a legal travel path that is continuous from starting location to existing treasure with n choices, the recursive abstraction can find a legal travel path with n-1 choices.
+When I am asked to solve a maze with n choices, the recursive abstraction can solve the maze with n-1 choices.
 
 ## base case
 if the location of the explorer is at the location of the treasure, return true
-if there are no legal paths, false
+if there are no legal paths, return false
 
 ## English or pseudocode description of algorithm
 ```
