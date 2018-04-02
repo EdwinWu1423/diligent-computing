@@ -16,15 +16,15 @@ legal meaning:
 When I am asked for a legal travel path that is continuous from starting location to existing treasure with n choices, the recursive abstraction can find a legal travel path with n-1 choices.
 
 ## base case
-if the location of the explorer is at the location of the treasure, return the solution
-if there are no legal paths, return
+if the location of the explorer is at the location of the treasure, return true
+if there are no legal paths, false
 
 ## English or pseudocode description of algorithm
 ```
 if location of explorer equals location of treasure
-	return the solution
+	return true
 else if no legal paths
-	return
+	return false
 else
 	for each position in maze
 		test each possible next position (up, down, left or right relative to current explorer position) to see if position is legal
