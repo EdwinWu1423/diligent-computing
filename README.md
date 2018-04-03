@@ -31,11 +31,11 @@ else if no legal paths
 	return false
 else
 	for each position in maze
-		test each possible next position (up, down, left or right relative to current explorer position) in that order to see if position is legal
+		move explorer to the possible next position (up, down, left or right relative to current explorer position) in that order to see if position is legal
 		if legal position
 			invoke recursive abstraction
-		move current position to the previous position
-		remove indicator of previous position
+		move previous position to the current position
+		remove record of previous position
 ```
 ## class(es), with fields and methods
 
