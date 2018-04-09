@@ -20,7 +20,6 @@ if the location of the explorer is at the location of the treasure, return true
 
 if there are no legal paths, return false
 
-
 if explorer's location is initialized in a wall, return false
 
 ## English or pseudocode description of algorithm
