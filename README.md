@@ -13,7 +13,7 @@ legal meaning:
 - a path cannot go through the same point twice
 
 ## recursive abstraction
-When I am asked to return the Boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from starting location to existing treasure" for a maze of n paths, the recursive abstraction can return the Boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from starting location to existing treasure" for a maze of n-1 paths.
+When I am asked to return the Boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from starting location to existing treasure", the recursive abstraction can return the Boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from starting location to existing treasure" for a maze after the explorer has moved one stepping stone.
 
 ## base case
 if the location of the explorer is at the location of the treasure, return true
