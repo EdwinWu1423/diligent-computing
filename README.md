@@ -35,6 +35,8 @@ else
 			invoke recursive abstraction
 		move previous position to the current position
 		remove record of previous position
+		if there are no legal paths to take
+			backtrack to the previously recorded position
 ```
 ## class(es), with fields and methods
 
