@@ -16,6 +16,7 @@ public class MazeSolver {
 		else if(maze.explorerIsOnA() == Maze.WALL)
 			return false;
 		else {
+			
 			// wall makes sure it does not keep returning to current position
 			maze.dropA(Maze.WALL);
 			// take a snapshot of the maze currently

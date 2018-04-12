@@ -20,9 +20,12 @@ public class UserOfMazeSolver {
                             );
         System.out.println( maze + System.lineSeparator());
         baseTest(maze);
+
     }
 
     private static void baseTest(Maze maze) {
         System.out.println( MazeSolver.solve(maze));
+        System.out.println( maze + System.lineSeparator());
+        
     }
 }
