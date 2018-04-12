@@ -8,5 +8,12 @@
 */
 
 public class MazeSolver {
+	public boolean solveMaze(Maze maze){
+		if(maze.explorerIsOnA() == WALL)
+			return false;
+		if(maze.explorerIsOnA() == TREASURE)
+			return true;
+		
+	}
 
 }
