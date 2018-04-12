@@ -8,6 +8,7 @@
 */
 
 public class MazeSolver {
+	private static int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
 
 	public static boolean solve(Maze maze){
 		if(maze.explorerIsOnA() == Maze.TREASURE)
@@ -20,8 +21,12 @@ public class MazeSolver {
 			// take a snapshot of the maze currently
 			Maze snapshot;
 			snapshot = new Maze(maze);
+			for(int direction : directions) {
+				maze.go(direction);
+				solve(maze);
+				maze = new Maze(snapshot);
+			}
 		}
 		return false;
 	}
-
 }
