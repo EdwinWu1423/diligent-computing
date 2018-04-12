@@ -9,7 +9,9 @@
 
 public class MazeSolver {
 	private static int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
-
+	private Displayer picture;
+	public MazeSolver(Displayer window){
+		picture = window;
 	public static boolean solve(Maze maze){
 		if(maze.explorerIsOnA() == Maze.TREASURE)
 			return true;
