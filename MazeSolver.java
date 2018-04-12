@@ -18,11 +18,12 @@ public class MazeSolver {
 		else {
 			
 			// wall makes sure it does not keep returning to current position
-			maze.dropA(Maze.WALL);
+			
 			// take a snapshot of the maze currently
-			Maze snapshot;
-			snapshot = new Maze(maze);
+			
+			Maze snapshot = new Maze(maze);
 			for(int direction : directions) {
+				maze.dropA(Maze.WALL);
 				maze.go(direction);
 				if (solve(maze))
 					return true;
