@@ -27,7 +27,7 @@ public class MazeSolver {
 				maze.go(direction);
 				if (solve(maze))
 					return true;
-				maze = new Maze(snapshot);
+				maze = snapshot;
 			}
 		}
 		return false;
