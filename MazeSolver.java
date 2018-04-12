@@ -12,6 +12,7 @@ public class MazeSolver {
 	private Displayer picture;
 	public MazeSolver(Displayer window){
 		picture = window;
+	}
 	public static boolean solve(Maze maze){
 		if(maze.explorerIsOnA() == Maze.TREASURE)
 			return true;
