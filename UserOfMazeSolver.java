@@ -19,7 +19,10 @@ public class UserOfMazeSolver {
                             , Integer.parseInt( commandLine[2])
                             );
         System.out.println( maze + System.lineSeparator());
-        MazeSolver result = new MazeSolver(maze);
-        System.out.println( result.solve());
+        baseTest(maze);
+    }
+
+    private static void baseTest(Maze maze) {
+        System.out.println( MazeSolver.solve(maze));
     }
 }

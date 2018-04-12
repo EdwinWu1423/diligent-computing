@@ -8,17 +8,19 @@
 */
 
 public class MazeSolver {
-	private Maze maze;
-	public MazeSolver(Maze maze){
-		this.maze = maze;
-		solve();
-	}
 
-	public boolean solve(){
+	public static boolean solve(Maze maze){
 		if(maze.explorerIsOnA() == Maze.TREASURE)
 			return true;
-		if(maze.explorerIsOnA() == Maze.WALL)
+		else if(maze.explorerIsOnA() == Maze.WALL)
 			return false;
+		else {
+			// wall makes sure it does not keep returning to current position
+			maze.dropA(Maze.WALL);
+			// take a snapshot of the maze currently
+			Maze snapshot;
+			snapshot = new Maze(maze);
+		}
 		return false;
 	}
 
