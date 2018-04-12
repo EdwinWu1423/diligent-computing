@@ -9,9 +9,9 @@
 
 public class MazeSolver {
 	public boolean solveMaze(Maze maze){
-		if(maze.explorerIsOnA() == WALL)
+		if(maze.explorerIsOnA() == Maze.WALL)
 			return false;
-		if(maze.explorerIsOnA() == TREASURE)
+		if(maze.explorerIsOnA() == Maze.TREASURE)
 			return true;
 		
 	}
