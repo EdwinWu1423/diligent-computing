@@ -16,11 +16,10 @@ public class MazeSolver {
 		else if(maze.explorerIsOnA() == Maze.WALL)
 			return false;
 		else {
-			
+			Maze snapshot = new Maze(maze);
 			for(int direction : directions) {
 				// take a snapshot of the maze currently
-				Maze snapshot;
-				snapshot = new Maze(maze);
+				
 				// wall makes sure it does not keep returning to current position
 				maze.dropA(Maze.WALL);
 				maze.go(direction);
