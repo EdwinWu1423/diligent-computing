@@ -41,3 +41,5 @@ else
 ## class(es), with fields and methods
 
 ## version*n* wish list
+
+## known bugs
