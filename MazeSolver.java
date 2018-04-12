@@ -23,7 +23,8 @@ public class MazeSolver {
 			snapshot = new Maze(maze);
 			for(int direction : directions) {
 				maze.go(direction);
-				solve(maze);
+				if (solve(maze))
+					return true;
 				maze = new Maze(snapshot);
 			}
 		}
