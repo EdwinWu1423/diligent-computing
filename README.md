@@ -27,12 +27,12 @@ if location of explorer equals location of treasure
 else if no legal paths
 	return false
 else
-	for each position in maze
+	for each direction (up, down, left or right) in maze
+		take a snapshot of current maze
+		drop a wall
 		move explorer to the possible next position (up, down, left or right relative to current explorer position) in that order to see if position is legal
-		if legal position
-			invoke recursive abstraction
-		move previous position to the current position
-		remove record of previous position
+		if recursive abstraction is true
+			return true
 		if there are no legal paths to take
 			backtrack to the previously recorded position
 ```

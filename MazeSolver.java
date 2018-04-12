@@ -17,16 +17,16 @@ public class MazeSolver {
 			return false;
 		else {
 			
-			// wall makes sure it does not keep returning to current position
-			maze.dropA(Maze.WALL);
-			// take a snapshot of the maze currently
-			Maze snapshot;
-			snapshot = new Maze(maze);
 			for(int direction : directions) {
+				// take a snapshot of the maze currently
+				Maze snapshot;
+				snapshot = new Maze(maze);
+				// wall makes sure it does not keep returning to current position
+				maze.dropA(Maze.WALL);
 				maze.go(direction);
 				if (solve(maze))
 					return true;
-				maze = new Maze(snapshot);
+				maze = snapshot;
 			}
 		}
 		return false;
