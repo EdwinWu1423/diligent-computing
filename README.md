@@ -37,8 +37,20 @@ else
 			backtrack to the previously recorded position
 ```
 ## class(es), with fields and methods
+#### UserOfMazeSolver
+##### fields
+
+##### methods
+- baseTest, testing the method solve
+
+#### MazeSolver
+##### fields
+- directions, an int array consisting of the four directions
+
+##### methods
+- solve(Maze maze)
 
 ## version*n* wish list
+- show all solutions
 
 ## known bugs
-snapshot of the new maze does not work yet
