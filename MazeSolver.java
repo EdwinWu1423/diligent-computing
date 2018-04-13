@@ -34,12 +34,12 @@ public class MazeSolver {
 				
 				maze.go(direction);
 				
-				if (solve(maze)){
+				if (solve(maze))
 					return true;
 				
 				maze = new Maze(snapshot);
 				displayerTest(maze);
-			}
+			
 		}
 		return false;
 	}
