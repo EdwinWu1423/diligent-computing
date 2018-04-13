@@ -54,3 +54,4 @@ else
 - show all solutions
 
 ## known bugs
+- printed solution does not arrive at treasure
