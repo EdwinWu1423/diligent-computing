@@ -45,13 +45,56 @@ else
 
 #### MazeSolver
 ##### fields
-- directions, an int array consisting of the four directions
+- step, private static int
+- displayer, private static field of class Displayer
+- directions, private static int array consisting of the four directions
 
 ##### methods
 - solve(Maze maze)
+- displayer(int windowHeight)
+
+#### UserOfMaze
+##### fields
+- displayer, private static field of class Displayer
+
+##### methods
+- moveTest(Maze maze)
+- dropTest(Maze maze)
+- copyConstructTest(Maze old)
+- displayerTest(Maze m)
+- snapshotDemo(Maze candidate)
+
+#### Maze
+##### fields
+- treasure, public final static int
+- wall, public final static int
+- stepping_stone, public final static int
+- east, public final static int
+- north, public final static int
+- west, public final static int
+- south, public final static int
+- maze, private int 2D array
+- max_ranks, private final static int
+- rankCount, private int
+- explorerPosition, private field of class Vector
+
+##### methods
+- toString()
+- go(int direction)
+- dropA(int mazeElement)
+- explorerIsOnA()
+- equals(int rank, int file)
+
+#### Vector
+##### fields
+- rank, private int
+- file, private int
+
+##### methods
+- add(int ranks, int files)
 
 ## version*n* wish list
 - show all solutions
 
 ## known bugs
-- printed solution does not arrive at treasure
+
