@@ -93,8 +93,15 @@ else
 ##### methods
 - add(int ranks, int files)
 
+
+We tested these classes using text files from the directory mazes. Credit to those who contributed on Piazza@446 for helpful and fun test cases.
+
+
 ## version*n* wish list
 - show all solutions
+- show the shortest path
 
 ## known bugs
-
+- When displaying the maze during its recursive backtracking, the explorer disappears when it is on the boundary.
+- When the file given has no maze, the program gives a NullPointerException error. 
+- This is very inefficient with large mazes (like helloKitty.txt, which required more than 600 steps to solve the maze).
