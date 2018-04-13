@@ -9,21 +9,23 @@
 */
 
 public class UserOfMazeSolver {
-    
+    private static Displayer picture;
     public static void main(String[] commandLine) 
         throws java.io.FileNotFoundException {
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
                             );
-        System.out.println( maze + System.lineSeparator());
-        baseTest(maze);
+        int length = Integer.parseInt(commandLine[3]);
+        
+        baseTest(maze, length);
 
     }
 
-    private static void baseTest(Maze maze) {
+    private static void baseTest(Maze maze, int length) {
+        MazeSolver.displayer(length);
         System.out.println( MazeSolver.solve(maze));
-        System.out.println( maze + System.lineSeparator());
+        
         
     }
 }
