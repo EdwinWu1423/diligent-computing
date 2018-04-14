@@ -6,7 +6,7 @@
   o  the rank and file where an explorer is starting
   o  the height of your shell window as a final argument
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt 0 3 25
+      java UserOfMazeSolver mazes/4cell_treasureWest.txt 0 3 25
 */
 
 public class UserOfMazeSolver {
@@ -22,9 +22,14 @@ public class UserOfMazeSolver {
         baseTest(maze, windowHeight);
 
     }
-
+  
+    /**
+      Check the results of MazeSolver's display() and solve().
+      Run using a shell command like...
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 1 24
+    */
     private static void baseTest(Maze maze, int windowHeight) {
-        MazeSolver.displayer(windowHeight);
+        MazeSolver.display(windowHeight);
         System.out.println( MazeSolver.solve(maze));
         
         
