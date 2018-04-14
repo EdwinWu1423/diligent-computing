@@ -105,3 +105,7 @@ We tested these classes using text files from the directory mazes. Credit to tho
 - When displaying the maze during its recursive backtracking, the explorer disappears when it is on the boundary.
 - When the file given has no maze, the program gives a NullPointerException error. 
 - This is very inefficient with large mazes (like helloKitty.txt, which required more than 600 steps to solve the maze).
+
+## v1
+- make code easier to read and provide comments
+- provide more tests to ensure functionality
