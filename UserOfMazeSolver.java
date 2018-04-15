@@ -4,28 +4,36 @@
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting
-
+  o  the height of your shell window as a final argument
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1  # no explorer
+      java UserOfMazeSolver mazes/4cell_treasureWest.txt 0 3 25
 */
 
 public class UserOfMazeSolver {
-    private static Displayer displayer;
 
     public static void main(String[] commandLine) 
         throws java.io.FileNotFoundException {
+        // creates a new instance of class Maze, using the information given by the user in the terminal
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
                             );
-        System.out.println( maze + System.lineSeparator());
-        baseTest(maze);
+        // local variable that is bound to the height of the window, for future use
+        int windowHeight = Integer.parseInt(commandLine[3]);
+        
+        baseTest(maze, windowHeight);
 
     }
-
-    private static void baseTest(Maze maze) {
+  
+    /**
+      Check the results of MazeSolver's display() and solve().
+      Run using a shell command like...
+          java UserOfMazeSolver mazes/intersection_treasureNorth.txt 1 1 24
+    */
+    private static void baseTest(Maze maze, int windowHeight) {
+        MazeSolver.display(windowHeight);
         System.out.println( MazeSolver.solve(maze));
-        System.out.println( maze + System.lineSeparator());
+        
         
     }
 }
