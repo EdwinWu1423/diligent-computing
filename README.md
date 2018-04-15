@@ -70,12 +70,12 @@ else
 - WALL, public final static int
 - STEPPING_STONE, public final static int
 - STEPPER, public final static int
-- east, public final static int
-- north, public final static int
-- west, public final static int
-- south, public final static int
+- EAST, public final static int
+- NORTH, public final static int
+- WEST, public final static int
+- SOUTH, public final static int
 - maze, private int 2D array
-- max_ranks, private final static int
+- MAX_RANKS, private final static int
 - rankCount, private int
 - explorerPosition, private field of class Vector
 
