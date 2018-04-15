@@ -41,7 +41,7 @@ else
 ##### fields
 
 ##### methods
-- baseTest, testing the method solve
+- baseTest, testing the method solve(), private and static
 
 #### MazeSolver
 ##### fields
@@ -50,19 +50,19 @@ else
 - directions, private static int array consisting of the four directions
 
 ##### methods
-- solve(Maze maze)
-- displayer(int windowHeight)
+- solve(Maze maze), public and static
+- displayer(int windowHeight), public and static
 
 #### UserOfMaze
 ##### fields
 - displayer, private static field of class Displayer
 
 ##### methods
-- moveTest(Maze maze)
-- dropTest(Maze maze)
-- copyConstructTest(Maze old)
-- displayerTest(Maze m)
-- snapshotDemo(Maze candidate)
+- moveTest(Maze maze), private and static
+- dropTest(Maze maze), private and static
+- copyConstructTest(Maze old), private and static
+- displayerTest(Maze m), private and static
+- snapshotDemo(Maze candidate), private and static
 
 #### Maze
 ##### fields
@@ -80,11 +80,11 @@ else
 - explorerPosition, private field of class Vector
 
 ##### methods
-- toString()
-- go(int direction)
-- dropA(int mazeElement)
-- explorerIsOnA()
-- equals(int rank, int file)
+- toString(), public
+- go(int direction), public
+- dropA(int mazeElement), public
+- explorerIsOnA(), public
+- equals(int rank, int file), public
 
 #### Vector
 ##### fields
@@ -92,7 +92,7 @@ else
 - file, private int
 
 ##### methods
-- add(int ranks, int files)
+- add(int ranks, int files), private
 
 
 We tested these classes using text files from the directory mazes. Credit to those who contributed on Piazza@446 for helpful and fun test cases.
