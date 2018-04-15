@@ -66,9 +66,10 @@ else
 
 #### Maze
 ##### fields
-- treasure, public final static int
-- wall, public final static int
-- stepping_stone, public final static int
+- TREASURE, public final static int
+- WALL, public final static int
+- STEPPING_STONE, public final static int
+- STEPPER, public final static int
 - east, public final static int
 - north, public final static int
 - west, public final static int
@@ -98,6 +99,7 @@ We tested these classes using text files from the directory mazes. Credit to tho
 
 
 ## version*n* wish list
+- show one possible solution
 - show all solutions
 - show the shortest path
 
@@ -109,3 +111,4 @@ We tested these classes using text files from the directory mazes. Credit to tho
 ## v1
 - make code easier to read and provide comments
 - provide more tests to ensure functionality
+- shows path of explorer

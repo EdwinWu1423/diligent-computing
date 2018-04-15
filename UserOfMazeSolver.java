@@ -13,10 +13,12 @@ public class UserOfMazeSolver {
 
     public static void main(String[] commandLine) 
         throws java.io.FileNotFoundException {
+        // creates a new instance of class Maze, using the information given by the user in the terminal
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
                             );
+        // local variable that is bound to the height of the window, for future use
         int windowHeight = Integer.parseInt(commandLine[3]);
         
         baseTest(maze, windowHeight);
