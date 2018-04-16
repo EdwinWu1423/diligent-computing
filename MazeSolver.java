@@ -32,7 +32,7 @@ public class MazeSolver {
 		else if(maze.explorerIsOnA() == Maze.STEPPER) // if explorer is on a stepping stone that it has already been on, return false
 			return false;
 		else {
-			// stepper makes sure it does not keep returning to current position
+			// drops a stepper to make sure the explorer does not keep returning to current position
 			maze.dropA(Maze.STEPPER);
 			// take a snapshot of the maze currently
 			Maze snapshot = new Maze(maze);
